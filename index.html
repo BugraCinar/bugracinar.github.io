@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmet Buğrahan Çınar</title>
+  <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="icons/tabicon.png" type="image/png">
+</head>
+<body>
+ 
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="#about" class="nav-link" data-i18n="about">About Me</a>
+      <a href="#projects" class="nav-link" data-i18n="projects">Projects</a>
+    </div>
+    <div class="nav-right">
+        <a href="mailto:ahmetbugrahancinarr@gmail.com" target="_blank">
+          <img src="icons/mail-light.svg" class="icon" data-dark="icons/mail-dark.svg" data-light="icons/mail-light.svg" alt="Mail">
+        </a>
+        <a href="https://github.com/BugraCinar" target="_blank">
+          <img src="icons/github-light.svg" class="icon" data-dark="icons/github-dark.svg" data-light="icons/github-light.svg" alt="GitHub">
+        </a>
+        <a href="https://linkedin.com/in/ahmetbugrahancinar" target="_blank">
+          <img src="icons/linkedin-light.svg" class="icon" data-dark="icons/linkedin-dark.svg" data-light="icons/linkedin-light.svg" alt="LinkedIn">
+        </a>
+        <a href="https://instagram.com/bugralunden" target="_blank">
+          <img src="icons/instagram-light.svg" class="icon" data-dark="icons/instagram-dark.svg" data-light="icons/instagram-light.svg" alt="Instagram">
+        </a>
+      
+        
+        <button id="theme-toggle" class="icon-btn">
+          <img src="icons/theme-light.svg" id="theme-icon" data-dark="icons/theme-dark.svg" data-light="icons/theme-light.svg" alt="Tema Değiştir">
+        </button>
+      
+      
+        <button class="lang-btn" data-lang="tr">TR</button>
+  <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+  </nav>
+
+ 
+  <section id="about" class="section">
+    <img src="icons/profile.jpg" alt="Profil Fotoğrafı" class="profile-img">
+    <h1 data-i18n="name">Ahmet Buğrahan Çınar</h1>
+    <p data-i18n="aboutText" class="about-text">Merhaba! Ben Buğra, İstanbul Arel Üniversitesi'nin 3. sınıf öğrencisiyim. 
+        Burada, yazılım geliştirme yolculuğumda yaptığım projeleri paylaşıyorum. Genellikle backend geliştirme üzerine yoğunlaşsam da, farklı alanlarla ilgili projelerimi de inceleyebilirsiniz. </p>
+  </section>
+
+  
+  <section id="projects" class="section">
+    <h2 data-i18n="projects">Projeler</h2>
+    <div class="project-grid">
+        <div class="project-card">
+          <h3 data-i18n="project1Title">KAI-BET</h3>
+          <p data-i18n="project1Desc">OOP dersi için yapmış olduğun futbol iddaa uygulaması</p>
+          <a href="https://github.com/BugraCinar/kaibet" target="_blank" class="project-btn" data-i18n="viewRepo">GitHub Repo</a>
+        </div>
+        <div class="project-card">
+          <h3 data-i18n="project2Title">Football Stats</h3>
+          <p data-i18n="project2Desc">DBMS dersi için yapmış olduğum futbol istatistik veritabanı</p>
+          <a href="https://github.com/BugraCinar/footballstats-sql" target="_blank" class="project-btn" data-i18n="viewRepo">GitHub Repo</a>
+        </div>
+        <div class="project-card">
+          <h3 data-i18n="project2Title">TO BE UPDATED</h3>
+          <p data-i18n="project2Desc">...</p>
+          
+        </div>
+      </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+<footer class="footer">
+  <p>&copy; 2025 Buğra. No(!) rights reserved. | <em>This is not the final version.</em></p>
+</footer>
+
+</html>
