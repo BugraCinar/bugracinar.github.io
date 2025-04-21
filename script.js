@@ -48,7 +48,7 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
       project1Title: "KAI-BET",
       project1Desc: "A football betting application I developed for the Object-Oriented Programming course.",
       project2Title: "Football Stats",
-      project2Desc: "A football statistics database I developed for the Database Management Systems course."
+      project2Desc: "A football statistics database I developed for the Database Management Systems course.",
          project3Title: "TO BE UPDATED",
      project3Desc: "..."
     },
@@ -61,7 +61,7 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
       project1Title: "KAI-BET",
       project1Desc: "OOP dersi için yapmış olduğun futbol iddaa uygulaması",
       project2Title: "Football Stats",
-      project2Desc: "DBMS dersi için yapmış olduğum futbol istatistik veritabanı"
+      project2Desc: "DBMS dersi için yapmış olduğum futbol istatistik veritabanı",
      project3Title: "TO BE UPDATED",
      project3Desc: "..."
     }
