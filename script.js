@@ -50,7 +50,7 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
       project2Title: "Football Stats",
       project2Desc: "A football statistics database I developed for the Database Management Systems course.",
          project3Title: "TO BE UPDATED",
-     project3Desc: "..."
+     project3Desc: "...",
     },
     tr: {
       about: "Hakkımda",
@@ -63,7 +63,7 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
       project2Title: "Football Stats",
       project2Desc: "DBMS dersi için yapmış olduğum futbol istatistik veritabanı",
      project3Title: "TO BE UPDATED",
-     project3Desc: "..."
+     project3Desc: "...",
     }
   };
   
