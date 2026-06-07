@@ -3,79 +3,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ahmet Buğrahan Çınar</title>
+  <meta name="description" content="Ahmet Buğrahan Çınar - Java Backend Developer portfolio. Spring Boot, REST API, WebSocket, security, AI and real-time systems projects.">
+  <title>Ahmet Buğrahan Çınar | Java Backend Developer</title>
   <link rel="stylesheet" href="style.css">
-   <link rel="icon" href="icons/tabicon.png" type="image/png">
+  <link rel="icon" href="icons/tabicon.png" type="image/png">
 </head>
 <body>
- 
-  <nav class="navbar">
-    <div class="nav-left">
-      <a href="#about" class="nav-link" data-i18n="about">Hakkımda</a>
-      <a href="#projects" class="nav-link" data-i18n="projects">Projeler</a>
-    </div>
-    <div class="nav-right">
-        <a href="mailto:ahmetbugrahancinarr@gmail.com" target="_blank">
-          <img src="icons/mail-light.svg" class="icon" data-dark="icons/mail-dark.svg" data-light="icons/mail-light.svg" alt="Mail">
+  <header class="site-header">
+    <nav class="navbar" aria-label="Ana navigasyon">
+      <a class="brand" href="#home" aria-label="Ana sayfa">
+        <span>Ahmet Buğrahan Çınar</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#about" data-i18n="navAbout">Hakkımda</a>
+        <a href="#projects" data-i18n="navProjects">Projeler</a>
+        <a href="#experience" data-i18n="navExperience">Deneyim</a>
+        <a href="#contact" data-i18n="navContact">İletişim</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="mailto:ahmetbugrahancinarr@gmail.com" class="icon-link" aria-label="E-posta gönder">
+          <img src="icons/mail-light.svg" class="theme-icon" data-dark="icons/mail-dark.svg" data-light="icons/mail-light.svg" alt="">
         </a>
-        <a href="https://github.com/BugraCinar" target="_blank">
-          <img src="icons/github-light.svg" class="icon" data-dark="icons/github-dark.svg" data-light="icons/github-light.svg" alt="GitHub">
+        <a href="https://github.com/BugraCinar" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub profili">
+          <img src="icons/github-light.svg" class="theme-icon" data-dark="icons/github-dark.svg" data-light="icons/github-light.svg" alt="">
         </a>
-        <a href="https://linkedin.com/in/ahmetbugrahancinar" target="_blank">
-          <img src="icons/linkedin-light.svg" class="icon" data-dark="icons/linkedin-dark.svg" data-light="icons/linkedin-light.svg" alt="LinkedIn">
+        <a href="https://linkedin.com/in/ahmetbugrahancinar" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn profili">
+          <img src="icons/linkedin-light.svg" class="theme-icon" data-dark="icons/linkedin-dark.svg" data-light="icons/linkedin-light.svg" alt="">
         </a>
-        <a href="https://instagram.com/bugralunden" target="_blank">
-          <img src="icons/instagram-light.svg" class="icon" data-dark="icons/instagram-dark.svg" data-light="icons/instagram-light.svg" alt="Instagram">
-        </a>
-      
-        
-        <button id="theme-toggle" class="icon-btn">
-          <img src="icons/theme-light.svg" id="theme-icon" data-dark="icons/theme-dark.svg" data-light="icons/theme-light.svg" alt="Tema Değiştir">
+        <button id="theme-toggle" class="icon-button" type="button" aria-label="Temayı değiştir">
+          <img src="icons/theme-light.svg" id="theme-icon" data-dark="icons/theme-dark.svg" data-light="icons/theme-light.svg" alt="">
         </button>
-      
-      
-        <button class="lang-btn" data-lang="tr">TR</button>
-  <button class="lang-btn" data-lang="en">EN</button>
-      </div>
-  </nav>
-
- 
-  <section id="about" class="section">
-    <img src="icons/profile.jpg" alt="Profil Fotoğrafı" class="profile-img">
-    <h1 data-i18n="name">Ahmet Buğrahan Çınar</h1>
-    <p data-i18n="aboutText" class="about-text">Merhaba! Ben Buğra, İstanbul Arel Üniversitesi'nin 3. sınıf öğrencisiyim. 
-        Burada, yazılım geliştirme yolculuğumda yaptığım projeleri paylaşıyorum. Genellikle backend geliştirme üzerine yoğunlaşsam da, farklı alanlarla ilgili projelerimi de inceleyebilirsiniz. </p>
-  </section>
-
-  
-  <section id="projects" class="section">
-    <h2 data-i18n="projects">Projeler</h2>
-    <div class="project-grid">
-        <div class="project-card">
-          <h3 data-i18n="project1Title">KAI-BET</h3>
-          <p data-i18n="project1Desc">OOP dersi için yapmış olduğun futbol iddaa uygulaması</p>
-          <a href="https://github.com/BugraCinar/kaibet" target="_blank" class="project-btn" data-i18n="viewRepo">GitHub Repo</a>
-        </div>
-        <div class="project-card">
-          <h3 data-i18n="project2Title">Football Stats</h3>
-          <p data-i18n="project2Desc">DBMS dersi için yapmış olduğum futbol istatistik veritabanı</p>
-          <a href="https://github.com/BugraCinar/footballstats-sql" target="_blank" class="project-btn" data-i18n="viewRepo">GitHub Repo</a>
-        </div>
-        <div class="project-card">
-          <h3 data-i18n="project3Title">TO BE UPDATED</h3>
-          <p data-i18n="project3Desc">...</p>
-          
+        <div class="language-switch" aria-label="Dil seçimi">
+          <button class="lang-btn active" type="button" data-lang="tr">TR</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
         </div>
       </div>
-  </section>
+    </nav>
+  </header>
 
-  <script src="script.js"></script>
+  <main id="home">
+    <section id="about" class="hero section">
+      <div class="hero-copy">
+        <h1 data-i18n="heroName">Ahmet Buğrahan Çınar</h1>
+        <p class="hero-role" data-i18n="eyebrow">Java Backend Developer</p>
+        <p class="hero-text" data-i18n="aboutText">
+          Java Spring Boot ile güvenli API mimarileri, gerçek zamanlı WebSocket akışları ve veri odaklı servisler geliştiriyorum. Hastane, fintech ve AI projelerinde backend tarafında problemleri sade, test edilebilir ve sürdürülebilir yapılara dönüştürmeye odaklanıyorum.
+        </p>
+        <div class="hero-chip-row">
+          <a href="#projects" class="hero-chip" data-i18n="viewProjects">Projeler</a>
+          <a href="mailto:ahmetbugrahancinarr@gmail.com" class="hero-chip">ahmetbugrahancinarr@gmail.com</a>
+          <a href="https://github.com/BugraCinar" target="_blank" rel="noopener noreferrer" class="hero-chip">GitHub</a>
+          <a href="https://linkedin.com/in/ahmetbugrahancinar" target="_blank" rel="noopener noreferrer" class="hero-chip">LinkedIn</a>
+        </div>
+        <div class="hero-stats" aria-label="Profil özeti">
+          <div>
+            <strong>12+</strong>
+            <span data-i18n="statProjects">Proje</span>
+          </div>
+          <div>
+            <strong>3</strong>
+            <span data-i18n="statDomains">Kurumsal deneyim</span>
+          </div>
+          <div>
+            <strong>Java</strong>
+            <span data-i18n="statFocus">Ana odak</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <button class="boot-terminal" type="button" aria-label="Terminal ekranını değiştir" title="Her zaman kalbimizde ve aklımızda">
+          <div class="terminal-top">
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>bugra-api</p>
+          </div>
+          <div class="terminal-body">
+            <p class="terminal-line command"><span>$</span> ./mvnw spring-boot:run</p>
+            <p class="terminal-line muted">[INFO] Scanning for projects...</p>
+            <p class="terminal-line muted">[INFO] Building portfolio-service</p>
+            <p class="terminal-line">Tomcat initialized on port 8080</p>
+            <p class="terminal-line">Started Application in 1.42 seconds</p>
+            <p class="terminal-line success"><span>$</span> service status: UP</p>
+            <p class="terminal-line prompt"><span>$</span> <i></i></p>
+          </div>
+        </button>
+        <img src="icons/ataturk.gif" alt="Atatürk" class="ataturk-gif" title="Her zaman kalbimizde ve aklımızda">
+      </div>
+    </section>
+
+    <section class="section tech-band" aria-label="Teknoloji yığını">
+      <div class="section-inner">
+        <span>Java</span>
+        <span>Spring Boot</span>
+        <span>REST API</span>
+        <span>WebSocket</span>
+        <span>JWT</span>
+        <span>MySQL</span>
+        <span>Docker</span>
+        <span>React</span>
+        <span>TypeScript</span>
+        <span>PyTorch</span>
+        <span>C++</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="projectsEyebrow">Öne Çıkan Projeler</p>
+        <h2 data-i18n="projectsTitle">Projeler</h2>
+        <p data-i18n="projectsIntro">Backend ağırlıklı çalışmalarımın yanında AI, admin panel, görüntü işleme, veritabanı ve sistem programlama projeleri.</p>
+      </div>
+
+      <div class="project-toolbar" aria-label="Proje filtreleri">
+        <button class="filter-btn active" type="button" data-filter="all" data-i18n="filterAll">Tümü</button>
+        <button class="filter-btn" type="button" data-filter="backend">Backend</button>
+        <button class="filter-btn" type="button" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" type="button" data-filter="ai">AI</button>
+        <button class="filter-btn" type="button" data-filter="database" data-i18n="filterDatabase">Veritabanı</button>
+        <button class="filter-btn" type="button" data-filter="system" data-i18n="filterSystem">Sistem</button>
+      </div>
+
+      <div id="project-grid" class="project-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="experience" class="section experience-section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="experienceEyebrow">Saha ve kurum deneyimi</p>
+        <h2 data-i18n="experienceTitle">Deneyim</h2>
+        <p data-i18n="experienceIntro">Gerçek kullanıcı akışları, canlı bildirimler ve kurum içi sistemler etrafında şekillenen backend çalışmaları.</p>
+      </div>
+      <div id="experience-list" class="experience-list"></div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-copy">
+        <p class="eyebrow" data-i18n="contactEyebrow">Contact me</p>
+        <h2 data-i18n="contactTitle">Private projeler ve iş birlikleri için konuşabiliriz.</h2>
+        <p data-i18n="contactText">
+          Detaylarını public paylaşamadığım hastane, fintech ve AI tabanlı projeler hakkında daha fazla bilgi almak istersen bana e-posta veya LinkedIn üzerinden ulaşabilirsin.
+        </p>
+      </div>
+      <div class="contact-actions">
+        <a href="mailto:ahmetbugrahancinarr@gmail.com" class="button primary">Email</a>
+        <a href="https://linkedin.com/in/ahmetbugrahancinar" target="_blank" rel="noopener noreferrer" class="button secondary">LinkedIn</a>
+        <a href="https://github.com/BugraCinar" target="_blank" rel="noopener noreferrer" class="button secondary">GitHub</a>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
-  <p>&copy; 2025 Buğra. No(!) rights reserved. | <em>This is not the final version.</em></p>
-</footer>
+    <p>&copy; <span id="year"></span> Ahmet Buğrahan Çınar. <span data-i18n="footerText">All rights reserved.</span></p>
+  </footer>
+
+  <script src="script.js" charset="UTF-8"></script>
 </body>
-
-
-
 </html>
