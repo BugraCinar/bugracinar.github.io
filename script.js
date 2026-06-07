@@ -204,9 +204,9 @@ const portfolio = {
         company: "Tam Finans",
         date: "02/2026 - Present",
         bullets: [
-          "SME odaklı AI Collection Agent, CivardaBul ve Halleder Quiz Game projeleri için Java Spring Boot, REST API ve WebSocket tabanlı backend mimarileri geliştiriyorum.",
-          "AI Collection Agent tarafında sesli arama, SMS hatırlatma, yönetim paneli, takip ve raporlama akışları için API altyapısı tasarlıyorum.",
-          "CivardaBul için location-based service ve real-time messaging modülleri; Halleder Quiz Game için gamified psychometric assessment ve scoring süreçleri geliştiriyorum."
+          "SME odaklı AI Collection Agent projesi için Java Spring Boot, REST API ve WebSocket tabanlı backend mimarileri geliştiriyorum.",
+          "Yönetim paneli, takip kontrolü, sesli arama ve SMS hatırlatma akışları için güçlü bir API altyapısı tasarlıyorum.",
+          "Yüksek performanslı veri işleme, asenkron iletişim ve güvenli entegrasyonlar ile tahsilat süreçlerini optimize eden ölçeklenebilir sistemler kurguluyorum."
         ]
       },
       {
@@ -436,9 +436,9 @@ const portfolio = {
         company: "Tam Finans",
         date: "02/2026 - Present",
         bullets: [
-          "Developing Java Spring Boot, REST API and WebSocket based backend architectures for SME-focused projects including AI Collection Agent, CivardaBul and Halleder Quiz Game.",
-          "Designing API infrastructure for AI Collection Agent voice calls, SMS reminders, management panel tracking and reporting flows.",
-          "Building location-based services and real-time messaging for CivardaBul, plus gamified psychometric assessment and scoring processes for Halleder Quiz Game."
+          "Developing Java Spring Boot, REST API and WebSocket based backend architectures for SME-focused AI Collection Agent project.",
+          "Designing robust API infrastructure for management panel tracking, voice calls, SMS reminders, and reporting flows.",
+          "Building scalable systems with high-performance data processing, asynchronous communication and secure integrations to optimize collection processes."
         ]
       },
       {
