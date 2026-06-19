@@ -109,7 +109,7 @@ const portfolio = {
       },
       {
         title: "Tahsilat Agent Backend",
-        status: "private",
+        status: "public",
         category: "backend",
         summary:
           "SME odaklı AI Collection Agent uygulaması için Java REST API tabanlı tahsilat otomasyon backend'i.",
@@ -118,7 +118,8 @@ const portfolio = {
           "Invoice, InvoiceCall, CallAnalysis ve CallArtifact gibi modellerle çağrı, fatura ve analiz kayıtlarını takip eden domain yapısı kurdum.",
           "Kimlik doğrulama ve hassas endpoint erişimleri için Argon2, salt ve pepper yaklaşımıyla güvenlik katmanını güçlendirdim."
         ],
-        tags: ["Java", "REST API", "AI Agent", "Argon2"]
+        tags: ["Java", "REST API", "AI Agent", "Argon2"],
+        repo: "https://github.com/BugraCinar/tahsilat-backend"
       },
       {
         title: "Tahsilat Agent Admin Panel",
@@ -202,11 +203,11 @@ const portfolio = {
       {
         role: "Java Backend Developer Student",
         company: "Tam Finans",
-        date: "02/2026 - Present",
+        date: "02/2026 - 06/2026",
         bullets: [
-          "SME odaklı AI Collection Agent projesi için Java Spring Boot, REST API ve WebSocket tabanlı backend mimarileri geliştiriyorum.",
-          "Yönetim paneli, takip kontrolü, sesli arama ve SMS hatırlatma akışları için güçlü bir API altyapısı tasarlıyorum.",
-          "Yüksek performanslı veri işleme, asenkron iletişim ve güvenli entegrasyonlar ile tahsilat süreçlerini optimize eden ölçeklenebilir sistemler kurguluyorum."
+          "SME odaklı AI Collection Agent, CivardaBul ve Halleder Quiz Game projeleri için Java Spring Boot, REST API ve WebSocket tabanlı backend mimarileri geliştiriyorum.",
+          "AI Collection Agent tarafında sesli arama, SMS hatırlatma, yönetim paneli, takip ve raporlama akışları için API altyapısı tasarlıyorum.",
+          "CivardaBul için location-based service ve real-time messaging modülleri; Halleder Quiz Game için gamified psychometric assessment ve scoring süreçleri geliştiriyorum."
         ]
       },
       {
@@ -341,7 +342,7 @@ const portfolio = {
       },
       {
         title: "Tahsilat Agent Backend",
-        status: "private",
+        status: "public",
         category: "backend",
         summary:
           "A Java REST API backend for an SME-focused AI Collection Agent application.",
@@ -350,7 +351,8 @@ const portfolio = {
           "Built a domain structure around models such as Invoice, InvoiceCall, CallAnalysis and CallArtifact to track invoices, calls and analysis records.",
           "Strengthened authentication and sensitive endpoint access with Argon2, salt and pepper based security practices."
         ],
-        tags: ["Java", "REST API", "AI Agent", "Argon2"]
+        tags: ["Java", "REST API", "AI Agent", "Argon2"],
+        repo: "https://github.com/BugraCinar/tahsilat-backend"
       },
       {
         title: "Tahsilat Agent Admin Panel",
@@ -434,11 +436,11 @@ const portfolio = {
       {
         role: "Java Backend Developer Student",
         company: "Tam Finans",
-        date: "02/2026 - Present",
+        date: "02/2026 - 06/2026",
         bullets: [
-          "Developing Java Spring Boot, REST API and WebSocket based backend architectures for SME-focused AI Collection Agent project.",
-          "Designing robust API infrastructure for management panel tracking, voice calls, SMS reminders, and reporting flows.",
-          "Building scalable systems with high-performance data processing, asynchronous communication and secure integrations to optimize collection processes."
+          "Developing Java Spring Boot, REST API and WebSocket based backend architectures for SME-focused projects including AI Collection Agent, CivardaBul and Halleder Quiz Game.",
+          "Designing API infrastructure for AI Collection Agent voice calls, SMS reminders, management panel tracking and reporting flows.",
+          "Building location-based services and real-time messaging for CivardaBul, plus gamified psychometric assessment and scoring processes for Halleder Quiz Game."
         ]
       },
       {
