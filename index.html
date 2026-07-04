@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ahmet Buğrahan Çınar - Java Backend Developer portfolio. Spring Boot, REST API, WebSocket, security, AI and real-time systems projects.">
   <title>Ahmet Buğrahan Çınar | Java Backend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="icons/tabicon.png" type="image/png">
 </head>
@@ -23,18 +26,9 @@
       </div>
 
       <div class="nav-actions">
-        <a href="mailto:ahmetbugrahancinarr@gmail.com" class="icon-link" aria-label="E-posta gönder">
-          <img src="icons/mail-light.svg" class="theme-icon" data-dark="icons/mail-dark.svg" data-light="icons/mail-light.svg" alt="">
-        </a>
-        <a href="https://github.com/BugraCinar" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub profili">
-          <img src="icons/github-light.svg" class="theme-icon" data-dark="icons/github-dark.svg" data-light="icons/github-light.svg" alt="">
-        </a>
-        <a href="https://linkedin.com/in/ahmetbugrahancinar" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="LinkedIn profili">
-          <img src="icons/linkedin-light.svg" class="theme-icon" data-dark="icons/linkedin-dark.svg" data-light="icons/linkedin-light.svg" alt="">
-        </a>
-        <button id="theme-toggle" class="icon-button" type="button" aria-label="Temayı değiştir">
-          <img src="icons/theme-light.svg" id="theme-icon" data-dark="icons/theme-dark.svg" data-light="icons/theme-light.svg" alt="">
-        </button>
+        <a href="mailto:ahmetbugrahancinarr@gmail.com" class="nav-action-link">Email</a>
+        <a href="https://github.com/BugraCinar" target="_blank" rel="noopener noreferrer" class="nav-action-link">GitHub</a>
+        <a href="https://linkedin.com/in/ahmetbugrahancinar" target="_blank" rel="noopener noreferrer" class="nav-action-link">LinkedIn</a>
         <div class="language-switch" aria-label="Dil seçimi">
           <button class="lang-btn active" type="button" data-lang="tr">TR</button>
           <button class="lang-btn" type="button" data-lang="en">EN</button>
@@ -46,14 +40,15 @@
   <main id="home">
     <section id="about" class="hero section">
       <div class="hero-copy">
+        <p class="hero-kicker" data-i18n="eyebrow">Java Backend Developer</p>
         <h1 data-i18n="heroName">Ahmet Buğrahan Çınar</h1>
-        <p class="hero-role" data-i18n="eyebrow">Java Backend Developer</p>
+        <p class="hero-role" data-i18n="heroTitle">Gerçek zamanlı, güvenli ve ölçeklenebilir backend sistemleri geliştiriyorum.</p>
         <p class="hero-text" data-i18n="aboutText">
           Java Spring Boot ile güvenli API mimarileri, gerçek zamanlı WebSocket akışları ve veri odaklı servisler geliştiriyorum. Hastane, fintech ve AI projelerinde backend tarafında problemleri sade, test edilebilir ve sürdürülebilir yapılara dönüştürmeye odaklanıyorum.
         </p>
         <div class="hero-chip-row">
           <a href="#projects" class="hero-chip" data-i18n="viewProjects">Projeler</a>
-          <a href="mailto:ahmetbugrahancinarr@gmail.com" class="hero-chip">ahmetbugrahancinarr@gmail.com</a>
+          <a href="mailto:ahmetbugrahancinarr@gmail.com" class="hero-chip">Email</a>
           <a href="https://github.com/BugraCinar" target="_blank" rel="noopener noreferrer" class="hero-chip">GitHub</a>
           <a href="https://linkedin.com/in/ahmetbugrahancinar" target="_blank" rel="noopener noreferrer" class="hero-chip">LinkedIn</a>
         </div>
@@ -72,7 +67,8 @@
           </div>
         </div>
       </div>
-      <div class="hero-media">
+
+      <div class="hero-media" aria-label="Portfolyo görsel alanı">
         <button class="boot-terminal" type="button" aria-label="Terminal ekranını değiştir" title="Her zaman kalbimizde ve aklımızda">
           <div class="terminal-top">
             <span></span>

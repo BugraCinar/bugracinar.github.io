@@ -12,7 +12,6 @@ const portfolio = {
         "Java Spring Boot ile güvenli API mimarileri, gerçek zamanlı WebSocket akışları ve veri odaklı servisler geliştiriyorum. Hastane, fintech ve AI projelerinde backend tarafında problemleri sade, test edilebilir ve sürdürülebilir yapılara dönüştürmeye odaklanıyorum.",
       viewProjects: "Projeler",
       contactMe: "Bana Ulaş",
-      profileRole: "Spring Boot, WebSocket, Security, AI entegrasyonları",
       statProjects: "Proje",
       statDomains: "Kurumsal deneyim",
       statFocus: "Ana odak",
@@ -245,7 +244,6 @@ const portfolio = {
         "I develop secure API architectures, real-time WebSocket flows and data-driven services with Java Spring Boot. Across healthcare, fintech and AI projects, I focus on turning backend problems into clean, testable and maintainable systems.",
       viewProjects: "Projects",
       contactMe: "Contact Me",
-      profileRole: "Spring Boot, WebSocket, Security, AI integrations",
       statProjects: "Projects",
       statDomains: "Enterprise experience",
       statFocus: "Main focus",
@@ -494,7 +492,7 @@ const renderProjects = () => {
   const { projects, ui } = portfolio[currentLang];
 
   grid.innerHTML = projects
-    .map((project) => {
+    .map((project, index) => {
       const isPrivate = project.status === "private";
       const hasRepo = Boolean(project.repo);
       const action = isPrivate
@@ -504,7 +502,7 @@ const renderProjects = () => {
           : `<span class="project-link pending" aria-disabled="true">${ui.pendingGithub}</span>`;
 
       return `
-        <article class="project-card" data-category="${project.category}">
+        <article class="project-card tilt-${index % 4}" data-category="${project.category}">
           <div class="card-top">
             <h3>${project.title}</h3>
             <span class="status-pill ${project.status}">${isPrivate ? ui.private : ui.public}</span>
@@ -523,6 +521,7 @@ const renderProjects = () => {
     .join("");
 
   applyProjectFilter();
+  observeReveals();
 };
 
 const renderExperience = () => {
@@ -531,8 +530,8 @@ const renderExperience = () => {
 
   list.innerHTML = experience
     .map(
-      (item) => `
-        <article class="experience-item">
+      (item, index) => `
+        <article class="experience-item tilt-${index % 3}">
           <div class="experience-meta">
             <strong>${item.company}</strong>
             <span>${item.date}</span>
@@ -547,6 +546,8 @@ const renderExperience = () => {
       `
     )
     .join("");
+
+  observeReveals();
 };
 
 const applyProjectFilter = () => {
@@ -556,15 +557,41 @@ const applyProjectFilter = () => {
   });
 };
 
-const updateThemeIcons = () => {
-  const isDark = document.body.classList.contains("dark");
+let revealObserver;
 
-  document.querySelectorAll(".theme-icon").forEach((img) => {
-    img.src = isDark ? img.dataset.dark : img.dataset.light;
+const observeReveals = () => {
+  const targets = document.querySelectorAll(
+    ".hero-copy, .hero-media, .section-heading, .project-card, .experience-item, .contact-copy, .contact-actions"
+  );
+
+  if (!("IntersectionObserver" in window)) {
+    targets.forEach((target) => target.classList.add("is-visible"));
+    return;
+  }
+
+  if (!revealObserver) {
+    revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.14 }
+    );
+  }
+
+  targets.forEach((target) => {
+    if (target.dataset.revealBound) {
+      return;
+    }
+
+    target.classList.add("reveal");
+    target.dataset.revealBound = "true";
+    revealObserver.observe(target);
   });
-
-  const themeIcon = document.getElementById("theme-icon");
-  themeIcon.src = isDark ? themeIcon.dataset.dark : themeIcon.dataset.light;
 };
 
 const setupTerminalReveal = () => {
@@ -579,12 +606,6 @@ const setupTerminalReveal = () => {
     heroMedia.classList.add("show-ataturk");
   });
 };
-
-document.getElementById("theme-toggle").addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-  localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
-  updateThemeIcons();
-});
 
 document.querySelectorAll(".lang-btn").forEach((button) => {
   button.addEventListener("click", () => {
@@ -605,19 +626,13 @@ document.querySelectorAll(".filter-btn").forEach((button) => {
 });
 
 window.addEventListener("DOMContentLoaded", () => {
-  const storedTheme = localStorage.getItem("theme");
   const storedLang = localStorage.getItem("lang");
-
-  if (storedTheme === "dark") {
-    document.body.classList.add("dark");
-  }
 
   if (storedLang && portfolio[storedLang]) {
     currentLang = storedLang;
   }
 
   document.getElementById("year").textContent = new Date().getFullYear();
-  updateThemeIcons();
   applyTranslations();
   setupTerminalReveal();
 });
