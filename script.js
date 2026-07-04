@@ -3,6 +3,7 @@ const portfolio = {
     ui: {
       navAbout: "Hakkımda",
       navProjects: "Projeler",
+      navWebsites: "Web Siteleri",
       navExperience: "Deneyim",
       navContact: "İletişim",
       heroName: "Ahmet Buğrahan Çınar",
@@ -235,6 +236,7 @@ const portfolio = {
     ui: {
       navAbout: "About",
       navProjects: "Projects",
+      navWebsites: "Websites",
       navExperience: "Experience",
       navContact: "Contact",
       heroName: "Ahmet Buğrahan Çınar",
